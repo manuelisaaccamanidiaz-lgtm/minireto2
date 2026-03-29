@@ -186,7 +186,7 @@ function mostrarResultados() {
 
     ordenados.forEach(est => {
         const li = document.createElement("li");
-        li.textContent = `${est.nombre} - ${est.promedio}`;
+        li.textContent = `${est.nombre} - ${est.promedio.toFixed(2)}`;
         listaOrdenados.appendChild(li);
     });
 
